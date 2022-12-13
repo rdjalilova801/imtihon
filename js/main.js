@@ -146,10 +146,10 @@ function qosh(){
 
     let object_mas = {
         name: inp1.value,
-        ish: inp2.value,
-        tel:inp3.value,
+        tashkilot: inp2.value,
+        number:inp3.value,
         email: inp4.value,
-        guruh:inp5.value
+        group:inp5.value
     }
     massiv.unshift(object_mas)
 
