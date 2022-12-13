@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Js yakunlash Imtihon</title>
+</head>
+<body>
+    <div>
+        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title" id="offcanvasScrollingLabel"><i class="fa-solid fa-gear"></i> Dashboard</h2>
+        </div>
+        <div class="offcanvas-body">
+            <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+                <div class="position-sticky">
+                    <div class="list-group list-group-flush mx-3 mt-4">
+
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-lock fa-fw me-3"></i><span>Dashbroad</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fa-solid fa-people-roof fa-fw me-3"></i><span>Guruhlar</span></a>
+                        <button class="btn btn-outline-light " data-bs-dismiss="offcanvas" aria-label="Close" onclick="add()">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                                <i class="fa-solid fa-user fa-fw me-3"></i><span>O`quvchilar</span>
+                            </a>
+                        </button>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fa-brands fa-algolia fa-fw me-3"></i><span>Bug`alteriya</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple">
+                            <i class="fa-solid fa-gear fa-fw me-3"></i><span>Sozlamalar</span></a>
+                        <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-building fa-fw me-3"></i><span>Yordam</span></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>.....</p>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="d-flex">
+            <div class="col-10">
+                <h2>Hello Rayhona👋</h2>
+            </div>
+
+            <div class="col-2 d-flex">
+                <button class="btn  btn-light mx-1"><i class="fa-solid fa-rotate-right"></i></button>
+                <button class="btn button1 btn-secondary mx-1"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn  btn-light mx-1"><i class="fa-solid fa-bell"></i></button>
+            </div>
+        </nav>
+    </div>
+<div class="container">
+    <div class="card p-3 my-5 py-4" style="box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.119); border-radius: 30px;">
+        <div class="row ">
+            <div class="col-3 d-flex">
+                <h1 class="p-3 text-success mx-3" style="border-radius: 50%;background-color: rgba(40, 205, 40, 0.275);"><i class="fa-solid fa-user-group"></i></h1>
+                <div>
+                    <div class="text-secondary">Hamma o`quvchilar</div>
+                    <h3>125 ta</h3>
+                </div>
+        </div>
+        <div class="col-3 d-flex">
+            <h1 class="p-3 text-success mx-3" style="border-radius: 50%;background-color: rgba(40, 205, 40, 0.275);"><i class="fa-solid fa-user-group"></i></h1>
+            <div>
+                <div class="text-secondary">Bitirgan o`quvchilar</div>
+                <h3>61 ta</h3>
+            </div>
+        </div>
+        <div class="col-3 d-flex">
+            <h1 class="p-3 text-danger mx-3" style="border-radius: 50%;background-color: rgba(255, 0, 0, 0.281);"><i class="fa-solid fa-user-group"></i></h1>
+            <div>
+                <div class="text-secondary">Ketgan o`quvchilar</div>
+                <h3>10 ta</h3>
+            </div>
+        </div>
+        <div class="col-3 d-flex">
+            <h1 class="p-3 text-success mx-3" style="border-radius: 50%;background-color: rgba(40, 205, 40, 0.275);"><i class="fa-solid fa-user-group"></i></h1>
+            <div>
+                <div class="text-secondary">Faol o`quvchilar</div>
+                <h3>54 ta</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="container">
+        <div class="card p-4 my-3" style="box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.195); border-radius: 30px;">
+            <div class="row">
+                <div class="col-5">
+                    <h3 class="fw-bold">Hamma O`quvchilar</h3>
+                    <p class="text-success fw-bold ">Faol o`quvchilar</p>
+                </div>
+                <div class="col-7 d-flex">
+                    <input class=" input my-3 form-control fw-bold fs-5 mx-3" oninput="qidir(this.value)" placeholder="Search" type="text">
+
+                    <select onchange="sarala(this.value)" class="form-select my-3 fw-bold fs-5">
+                        <option value="all">Select</option>
+                        <option value="true">Inactive</option>
+                        <option value="false">Active</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 align-items-center">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="text-secondary">F.I.O</div>
+                                </th>
+                            <th scope="col">
+                                <div class="text-secondary">Tashkilot</div>
+                            </th>
+                            <th scope="col">
+                                <div class="text-secondary">Telefon nomer</div>
+                            </th>
+                            <th scope="col">
+                                <div class="text-secondary">Email</div>
+                            </th>
+                            <th scope="col">
+                                <div class="text-secondary">Guruh</div>
+                            </th>
+                            <th scope="col">
+                                <div class="text-secondary">Status</div>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table class="table tbl1">
+                    
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/massiv.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
