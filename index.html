@@ -73,7 +73,7 @@
 
             <div class="col-2 d-flex">
                 <button class="btn  btn-light mx-1"><i class="fa-solid fa-rotate-right"></i></button>
-                <button class="btn button1 btn-secondary mx-1"><i class="fa-solid fa-plus"></i></button>
+                <button class="btn button1 btn-secondary mx-1"type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-plus"></i></button>
                 <button class="btn  btn-light mx-1"><i class="fa-solid fa-bell"></i></button>
             </div>
         </nav>
@@ -167,6 +167,28 @@
         </div>
     </div>
 </div>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success fw-bold " id="staticBackdropLabel"><i class="fa-solid fa-gear"></i> Dashboard</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input class="form-control inp1 fs-5 fw-bold my-2 text-success" type="text" placeholder="+Add Name">
+            <input class="form-control inp2 fs-5 fw-bold my-2 text-success" type="text" placeholder="+Add Kompany">
+            <input class="form-control inp3 fs-5 fw-bold my-2 text-success" type="number" placeholder="+Add Number">
+            <input class="form-control inp4 fs-5 fw-bold my-2 text-success" type="email" placeholder="+Add Email">
+            <input class="form-control inp5 fs-5 fw-bold my-2 text-success" type="text" placeholder="+Add Group">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success form-control fw-bold"onclick="qosh()" data-bs-dismiss="modal">Add User</button>
+        </div>
+      </div>
+    </div>
+  </div>
     
 
     <script src="js/jQuery.js"></script>
